@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 
-df_age = pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/santander_by_age.csv",index_col=0) 
+df_age =  pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/santander_by_age.csv",index_col=0)
 df_s = pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/santander_by_segment.csv",index_col=0)
 df_act = pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/santander_by_activity.csv",index_col=0)
 df_g = pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/santander_by_gender.csv",index_col=0)
