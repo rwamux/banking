@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 
-df =  pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/df_newt.csv",index_col=0)
+df =  pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/df_newt.csv",index_col=0,sep=',')
 df_age = df.T
 
 
