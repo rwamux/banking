@@ -7,8 +7,8 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 
-df =  pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/df_newt.csv",index_col=0,sep=',')
-df_age = df.T
+df_age =  pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/santander_by_age.csv",index_col=0,skiprows=1,names=['0-18','18-25','25-35','35-45','45-55','55-inf'])
+
 
 
 app = dash.Dash(__name__)
