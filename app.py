@@ -7,11 +7,8 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 
-df =  pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/santander_sclean.csv",index_col=0)
-df_a = df.loc[:,['age']].join(df.loc[:,'savings':'direct_debit'])
-df_age = df_a.groupby(pd.cut(df_a['age'],[0,18,25,35,45,55, pd.np.inf],labels=['0-18','18-25','25-35','35-45','45-55','55-inf'],right=False).astype(str)).sum()
-del df_age['age']
-df_age = df_age.T
+df =  pd.read_csv("https://github.com/rwamux/banking/blob/master/resources/df_newt.csv",index_col=0)
+df_age = df.T
 
 
 app = dash.Dash(__name__)
